@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My E-Commerce Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search for products...">
+        <button type="button" onclick="searchProducts()">Search</button>
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="https://images.pexels.com/photos/298864/pexels-photo-298864.jpeg" alt="shoes">
+            <h2>Shoes</h2>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://images.pexels.com/photos/208052/pexels-photo-208052.jpeg" alt="makeup kit">
+            <h2>Makeup kit</h2>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg" alt="smartwatch">
+            <h2>Smartwatch</h2>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg" alt="laptop">
+            <h2>Laptop</h2>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg" alt="smartphone">
+            <h2>Smartphone</h2>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="http://images.pexels.com/photos/5632379/pexels-photo-5632379.jpeg" >
+            
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+    <div id="shipping-form" style="display:none;">
+        <h2>Shipping Address</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br>
+            <label for="pin">PIN Code:</label>
+            <input type="text" id="pin" name="pin" required><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
